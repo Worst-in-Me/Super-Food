@@ -1,0 +1,43 @@
+html,
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    --color-sheme: var(--tg-color-sheme);
+
+    --viewport-height: var(--tg-viewport-height);
+    --viewport-stable-height: var(--tg-viewport-stable-height);
+
+    --text-main-color: var(--tg-theme-text-color);
+    --text-link-color: var(--tg-theme-link-color);
+    --text-secondary-color: var(--tg-theme-hint-color);
+    --text-accent-color: var(--tg-theme-accent-text-color);
+    --text-destructive-color: var(--tg-theme-destructive-text-color);
+    --text-subtitle-color: var(--tg-theme-subtitle-text-color);
+
+    --button-main-color: var(--tg-theme-button-color);
+    --button-disabled-color: var(--tg-theme-hint-color);
+    --button-text-color: var(--tg-theme-button-text-color);
+
+    --button-red-color: rgba(227, 85, 69, 1);
+    --button-green-color: rgba(39, 180, 78, 1);
+
+    --bg-main-color: var(--tg-theme-bg-color);
+    --bg-secondary-color: var(--tg-theme-secondary-bg-color);
+
+    --section-bg-color: var(--tg-theme-section-bg-color);
+    --section-header-color: var(--tg-theme-section-header-text-color);
+
+    color: var(--text-main-color);
+    background-color: var(--bg-secondary-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}

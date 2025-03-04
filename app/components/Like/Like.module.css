@@ -1,0 +1,29 @@
+.liked,
+.unliked {
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    right: 15px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.liked::after,
+.unliked::after {
+    position: absolute;
+    display: block;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./unlike.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.3s;
+}
+
+.liked::after {
+    background-image: url(./like.svg);
+}

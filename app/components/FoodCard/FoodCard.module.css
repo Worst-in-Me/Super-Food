@@ -1,0 +1,82 @@
+.Card {
+    border-radius: 16px;
+    padding: 12px 14px;
+    padding-top: 42px;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--bg-main-color);
+    transition: all 0.3s;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ImgHref {
+    height: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    height: 42px;
+    padding: 0 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--button-main-color);
+    font-family: 'Gilroy';
+    display: inline-flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.weight {
+    line-height: 162%;
+    font-weight: 600;
+    color: var(--text-secondary-color);
+    font-size: 13px;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.bottom {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.price::after {
+    content: ' ₽';
+}
+
+.wrapTag {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}

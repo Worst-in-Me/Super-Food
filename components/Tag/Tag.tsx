@@ -1,15 +1,16 @@
 import { memo, useMemo } from 'react';
-import hotImg from './hot.svg';
-import leivImg from './leiv.svg';
-import newImg from './new.svg';
 
-export interface TagProps {
+import hotImg from './hot.svg';
+import newImg from './new.svg';
+import leivImg from './leiv.svg';
+
+export interface TagProps extends ClassNameProps {
     tag: string;
 }
 
-export const Tag = memo(function Tag(props: TagProps) {
+export const Tag = memo(function Tag({ tag, className }: TagProps) {
     const imgSrc = useMemo(() => {
-        switch (props.tag) {
+        switch (tag) {
             case 'hot':
                 return hotImg.src;
             case 'leiv':
@@ -19,7 +20,9 @@ export const Tag = memo(function Tag(props: TagProps) {
             default:
                 return;
         }
-    }, [props.tag]);
+    }, [tag]);
+
     if (!imgSrc) return null;
-    return <img src={imgSrc} alt="" />;
+
+    return <img className={className} src={imgSrc} alt="" />;
 });

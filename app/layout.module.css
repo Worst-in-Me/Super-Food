@@ -1,4 +1,8 @@
 .container {
+  padding: calc(var(--header-height) + 10px) 0 20px;
+
+  height: var(--viewport-stable-height);
+
   display: grid;
   grid-template-areas:
     "nav"

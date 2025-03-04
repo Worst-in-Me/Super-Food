@@ -4,7 +4,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: system-ui, sans-serif;
+
+    font-size: calc(.1vw + 12px);
+
     --color-sheme: var(--tg-color-sheme);
+
+    --header-height: 60px;
 
     --viewport-height: var(--tg-viewport-height);
     --viewport-stable-height: var(--tg-viewport-stable-height);
@@ -33,8 +38,9 @@ body {
     background-color: var(--bg-secondary-color);
 }
 
-a {
+a, button {
     color: inherit;
+    font-family: inherit;
     text-decoration: none;
 }
 

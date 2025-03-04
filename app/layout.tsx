@@ -1,5 +1,9 @@
-import Image from 'next/image';
-import type { ReactNode } from 'react';
+'use client';
+
+import { type ReactNode } from 'react';
+
+import { Header } from '@/components/Header/Header';
+
 import { StoreProvider } from './StoreProvider';
 
 import './globals.css';
@@ -12,11 +16,12 @@ interface Props {
 export default function RootLayout({ children }: Props) {
     return (
         <StoreProvider>
-            <html lang="en">
+            <html lang="ru">
                 <head>
                     <script src="https://telegram.org/js/telegram-web-app.js"></script>
                 </head>
                 <body>
+                    <Header />
                     <section className={styles.container}>
                         <main className={styles.main}>{children}</main>
                     </section>

@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
-import { FoodCard, FoodCardProps } from './components/FoodCard/FoodCard';
-import styles from './page.module.css';
+
 import { products } from '@/lib/db';
+import { FoodCard } from '@/components/FoodCard/FoodCard';
+
+import styles from './page.module.css';
 
 export default function IndexPage() {
     return (
